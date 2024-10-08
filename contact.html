@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZonkyShop | Contacteer ons</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/map.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script src="./js/mapScript.js" defer></script>
+
+
+</head>
+
+<body>
+    <header class="contact-header">
+        <h1>Contacteer ons</h1>
+    </header>
+
+    <nav class="index-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Producten</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="klanten.html">Klanten</a></li>
+        </ul>
+    </nav>
+
+    <main id="contact-main">
+        <section class="contact-form">
+            <form>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" placeholder="Jouw naam" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
+
+                <label for="onderwerp">Onderwerp:</label>
+                <input type="text" id="onderwerp" name="onderwerp" placeholder="Het onderwerp" required>
+
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" placeholder="Jouw bericht" required></textarea>
+
+                <button class="button" type="submit">Verzend</button>
+            </form>
+        </section>
+    </main>
+    <aside id="contact-aside">
+        <div id="leafMap"></div>
+    </aside>
+
+    <footer class="footer">
+        <p>&copy; 2023 ZonkyShop - Ali Benacher</p>
+    </footer>
+</body>
+
+</html>
